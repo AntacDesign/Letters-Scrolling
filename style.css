@@ -6,7 +6,10 @@ body{
     font-size: 200px;
     width: max-content;
     position: absolute;
-    animation: 3s moveText linear infinite forwards;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    animation: 15s moveText linear forwards infinite;
 }
 
 @keyframes moveText{
@@ -14,6 +17,6 @@ body{
         transform: translateX(-100%)
     }
     100%{
-        transform: translateX(100%)
+        transform: translateX(21%)
     }
 }
