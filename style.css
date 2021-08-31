@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+}
+.texto{
+    font-weight: 700;
+    font-size: 200px;
+    width: max-content;
+    position: absolute;
+    animation: 3s moveText linear infinite forwards;
+}
+
+@keyframes moveText{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
