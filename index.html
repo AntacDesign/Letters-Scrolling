@@ -8,14 +8,16 @@
     <title>Letras infinito</title>
 </head>
 <body>
-    <div id="inputs">
-        <input type="text" name="mensaje" id="mensaje" placeholder="Escribe el mensaje que se mostrara">
-        <input type="range" name="segundos" id="segundos">
-        <input type="color" name="color" id="color">
+    <div class="container">
+        <div id="inputs">
+            <input type="text" name="mensaje" id="mensaje" placeholder="Escribe el mensaje que se mostrara">
+            <input type="range" name="segundos" id="segundos">
+            <input type="color" name="color" id="color">
+        </div>
+        <div class="mitad"></div>
+        <div id="texto" class="texto rueda outline"></div>
+        <div id="texto" class="texto rueda"></div>
     </div>
-    <div class="mitad"></div>
-    <div id="texto" class="texto rueda outline"></div>
-    <div id="texto" class="texto rueda"></div>
     <script src="./app.js"></script>
 </body>
 </html>

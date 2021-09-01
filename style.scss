@@ -1,0 +1,51 @@
+:root{
+    --color-texto: black;
+    --color-mitad: rebeccapurple;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.mitad{
+    width: 50vw;
+    height: 100vh;
+    background: rebeccapurple;
+    position: absolute;
+    z-index: 0;
+}
+.texto{
+    font-weight: 700;
+    color: var(--color-texto);
+    font-size: 200px;
+    width: max-content;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    animation: 5s moveText linear forwards infinite;
+    z-index: -1;
+}
+
+.outline{
+    outline-width: 3px;
+    color: transparent;
+    -webkit-text-stroke: 4px var(--color-texto);
+    z-index: 2;
+}
+
+@keyframes moveText{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(100vw)
+    }
+}

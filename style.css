@@ -1,44 +1,77 @@
-:root{
-    --color-texto: black;
-    --color-mitad: rebeccapurple;
-}
-body{
-    overflow: hidden;
-    margin: 0;
-}
-.mitad{
-    width: 50vw;
-    height: 100vh;
-    background: rebeccapurple;
-    position: absolute;
-    z-index: 0;
-}
-.texto{
-    font-weight: 700;
-    color: var(--color-texto);
-    font-size: 200px;
-    width: max-content;
-    position: absolute;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    animation: 5s moveText linear forwards infinite;
-    z-index: -1;
-    animationD
+:root {
+  --color-texto: black;
+  --color-mitad: rebeccapurple;
 }
 
-.outline{
-    outline-width: 3px;
-    color: transparent;
-    -webkit-text-stroke: 4px var(--color-texto);
-    z-index: 2;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@keyframes moveText{
-    0%{
-        transform: translateX(-100%)
-    }
-    100%{
-        transform: translateX(100vw)
-    }
+body, html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
+
+.mitad {
+  width: 50vw;
+  height: 100vh;
+  background: rebeccapurple;
+  position: absolute;
+  z-index: 0;
+}
+
+.texto {
+  font-weight: 700;
+  color: var(--color-texto);
+  font-size: 200px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 5s moveText linear forwards infinite;
+          animation: 5s moveText linear forwards infinite;
+  z-index: -1;
+}
+
+.outline {
+  outline-width: 3px;
+  color: transparent;
+  -webkit-text-stroke: 4px var(--color-texto);
+  z-index: 2;
+}
+
+@-webkit-keyframes moveText {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+
+@keyframes moveText {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+/*# sourceMappingURL=style.css.map */
